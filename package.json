@@ -2,14 +2,13 @@
   "name": "wewwg",
   "version": "1.0.0",
   "description": "We Eat What We Get",
-  "main": "index.js",
   "repository": "https://github.com/kmartin91/WEWWG",
   "author": "Kevin Martin",
   "license": "MIT",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "parcel": "^2.4.0",
