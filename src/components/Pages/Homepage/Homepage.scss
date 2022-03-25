@@ -1,0 +1,71 @@
+.Homepage {
+  margin: 32px;
+}
+
+.Homepage__title {
+  font-size: 22px;
+}
+
+.Homepage__left {
+  width: 30%;
+
+  @media (max-width: 1368px) {
+    width: 50%;
+  }
+  @media (max-width: 910px) {
+    width: 100%;
+  }
+}
+
+.Homepage__paragraph {
+  padding-top: 16px;
+}
+
+.Homepage__externalLink {
+  &::before {
+    content: "";
+    background: #000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::before {
+      transform-origin: left;
+      transform: scaleX(1);
+      width: 100%;
+    }
+  }
+}
+
+.Homepage__buyContainer {
+  font-size: 24px;
+  margin: 64px 0 32px;
+}
+
+.Homepage__buyLink {
+  margin-left: 8px;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+
+  background: linear-gradient(to left, #fff 50%, #000 50%) 100% / 200%;
+
+  &:hover {
+    background-position: left;
+    color: white;
+  }
+}
+
+.Homepage__infosContainer {
+  font-size: 20px;
+}
+
+.Homepage__infosParagraph {
+  margin: 8px 0;
+}

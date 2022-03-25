@@ -1,0 +1,10 @@
+# folders
+.parcel-cache
+dist
+node_modules
+
+# MAC OS X file
+.DS_Store
+
+# Visual Studio Code
+.vscode

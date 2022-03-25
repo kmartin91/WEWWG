@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Natlacen";
+  src: url("./assets/font/Natlacen-Regular.woff2") format("woff2"),
+    url("./assets/font/Natlacen-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: white;
+  font-family: "Natlacen", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+
+  &:focus-visible {
+    outline: 1px dashed #000;
+  }
+}
