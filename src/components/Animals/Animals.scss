@@ -1,0 +1,68 @@
+.Animals {
+  display: flex;
+  flex-direction: column;
+}
+
+.Animals__image {
+  position: absolute;
+  z-index: 2;
+
+  @media (max-width: 1200px) {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    align-self: center;
+  }
+}
+
+.Animals__pangolin {
+  left: 30%;
+  top: 50%;
+}
+
+.Animals__chauveSouris {
+  left: 45%;
+  top: 5%;
+
+  @media (max-width: 1624px) {
+    left: 50%;
+  }
+}
+
+.Animals__bovin {
+  right: 25%;
+  top: 15%;
+
+  @media (max-width: 1624px) {
+    top: 20%;
+    right: 10%;
+  }
+}
+
+.Animals__dromadaire {
+  left: 5%;
+  top: 75%;
+}
+
+.Animals__rat {
+  top: 80%;
+  left: 42%;
+}
+
+.Animals__alpaga {
+  bottom: 5%;
+  right: 15%;
+  z-index: 2;
+
+  @media (max-width: 1624px) {
+    right: 5%;
+  }
+}
+
+.Animals__civette {
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+}

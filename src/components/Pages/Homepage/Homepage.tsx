@@ -1,3 +1,5 @@
+import Animals from "../../Animals/Animals";
+
 import "./Homepage.scss";
 
 const HomePage = () => (
@@ -37,13 +39,28 @@ const HomePage = () => (
 
       <div className="Homepage__buyContainer">
         {">>"}
-        <a href="#" className="Homepage__buyLink">
-          Pre order your set of 7 plates now
-        </a>
+        <form
+          target="paypal"
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="XABGUJWLBVYLJ" />
+          <img
+            alt=""
+            border="0"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+            width="1"
+            height="1"
+          />
+          <button type="submit" className="Homepage__buyLink">
+            Pre order your set of 7 plates now
+          </button>
+        </form>
       </div>
 
       <div className="Homepage__infosContainer">
-        <p className="Homepage__infosParagraph">75 € / 50 copies</p>
+        <p className="Homepage__infosParagraph">175 € / 50 copies</p>
         <p className="Homepage__infosParagraph">
           (Hand made in Jingdezhen, China)
         </p>
@@ -52,6 +69,8 @@ const HomePage = () => (
         </p>
       </div>
     </div>
+
+    <Animals />
   </div>
 );
 

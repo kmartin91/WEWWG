@@ -45,14 +45,20 @@
 }
 
 .Homepage__buyContainer {
+  display: flex;
   font-size: 24px;
   margin: 64px 0 32px;
 }
 
 .Homepage__buyLink {
+  border: 0;
+  cursor: pointer;
   margin-left: 8px;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
+  font-family: "Natlacen", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 0;
 
   background: linear-gradient(to left, #fff 50%, #000 50%) 100% / 200%;
 
