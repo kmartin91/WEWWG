@@ -1,68 +1,102 @@
 .Animals {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 910px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 64px;
+    gap: 32px;
+  }
 }
 
-.Animals__image {
-  position: absolute;
+.Animals__imageContainer {
   z-index: 2;
+  position: absolute;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 910px) {
     position: relative;
+
+    /* reset position */
     left: auto !important;
     top: auto !important;
     right: auto !important;
     bottom: auto !important;
-    align-self: center;
+    height: auto !important;
+    width: auto !important;
+    max-width: none !important;
   }
+}
+
+.Animals__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .Animals__pangolin {
   left: 30%;
   top: 50%;
+  width: 25vw;
+  max-width: 465px;
+
+  @media (max-width: 1368px) {
+    top: 75%;
+    left: 5%;
+  }
 }
 
 .Animals__chauveSouris {
+  width: 5vw;
   left: 45%;
   top: 5%;
+  max-width: 141px;
 
-  @media (max-width: 1624px) {
-    left: 50%;
+  @media (max-width: 1368px) {
+    top: 2%;
+    left: 55%;
   }
 }
 
 .Animals__bovin {
+  width: 15vw;
   right: 25%;
   top: 15%;
-
-  @media (max-width: 1624px) {
-    top: 20%;
-    right: 10%;
-  }
+  max-width: 391px;
 }
 
 .Animals__dromadaire {
+  width: 16vw;
   left: 5%;
   top: 75%;
-}
+  max-width: 448px;
 
-.Animals__rat {
-  top: 80%;
-  left: 42%;
-}
-
-.Animals__alpaga {
-  bottom: 5%;
-  right: 15%;
-  z-index: 2;
-
-  @media (max-width: 1624px) {
-    right: 5%;
+  @media (max-width: 1599px) {
+    top: 45%;
+    right: 20%;
+    left: auto;
   }
 }
 
+.Animals__rat {
+  width: 8vw;
+  top: 80%;
+  left: 42%;
+  min-width: 150px;
+  max-width: 221px;
+}
+
+.Animals__alpaga {
+  width: 14vw;
+  bottom: 5%;
+  right: 15%;
+  max-width: 334px;
+}
+
 .Animals__civette {
+  width: 13vw;
   top: 5%;
   right: 5%;
-  z-index: 2;
+  max-width: 309px;
 }
